@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Resizable Div</title>
+	<style>
+  
+		.container {
+		  width: 100%;
+		  max-height: 200px;
+		  position: relative;
+		  border: 1px solid gray;
+		  overflow: hidden;      
+      display: flex;      
+		} 
+		
+    .sectionInvalidations {
+      /* flex-basis: 70%; */
+    }
+    
+    .sectionDetails {
+      /* flex-grow: 1; */
+    }
+    
+		.sectionInvalidations,
+    .sectionDetails
+    {      
+			height: 100%;
+			padding: 5px;
+			box-sizing: border-box;      
+      overflow-x: hidden;
+      overflow-y: scroll;
+      /* transition: all 0.3s ease; */
+		}
+		
+		.handle {			
+			flex-basis: 3px;			
+			cursor: col-resize;
+			background-color: gray;      
+      vertical-align: top;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">		
+		<div class="sectionInvalidations">
+			<pre>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+      </pre>
+		</div>
+    <div class="handle"></div>
+    <div class="sectionDetails">
+			<pre>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Curabitur placerat, elit non bibendum consequat, lacus mauris faucibus enim, vel vestibulum enim nulla sed justo.
+      </pre>
+		</div>
+	</div>
+	
+	<script>
+		var handle = document.querySelector('.handle');
+		var container = document.querySelector('.container');
+		var sectionInvalidations = document.querySelector('.sectionInvalidations');
+    var sectionDetails = document.querySelector('.sectionDetails');
+		
+    var xCoord;
+    var Inv_width;
+    
+		handle.addEventListener('mousedown', function(e) {
+      e.preventDefault();
+    	xCoord = e.pageX;
+      Inv_width = sectionInvalidations.offsetWidth; 
+      
+			document.addEventListener('mousemove', resize);
+			document.addEventListener('mouseup', stopResize);
+		});
+		
+		function resize(e) {
+      e.preventDefault();
+      let x = e.pageX - xCoord;
+      let new_width = Inv_width + x;      
+      
+      const containerWidth = container.offsetWidth;
+  		const handleWidth = handle.offsetWidth; /*  / containerWidth * 100; */
+  		const sectionInvalidationsWidth = new_width; /*  / containerWidth * 100; */
+  		const sectionDetailsWidth = containerWidth - sectionInvalidationsWidth - handleWidth;  /* 100 - sectionInvalidationsWidth - handleWidth; */
+  		sectionInvalidations.style.flexBasis = `${sectionInvalidationsWidth}px`;
+  		sectionDetails.style.flexBasis = `${sectionDetailsWidth}px`;
+		}
+		
+		function stopResize() {
+			document.removeEventListener('mousemove', resize);
+		}
+	</script>
+</body>
+</html>
